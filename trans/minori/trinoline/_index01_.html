@@ -1,0 +1,698 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja">
+<head>
+<meta name="viewport" content="width=810">
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<meta name="keywords" content="trinoline, トリノライン, minori">
+<meta name="description" content="Follow@trinoline">
+<!-- begin extra meta tag -->
+<meta name="copyright" content="Copyright Yuuna / minori">
+<!-- end extra meta tag -->
+<title>.:. トリノライン｜minori .:.</title>
+<link href="/css/minori_trino.css" rel="stylesheet" type="text/css">
+
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+<script type="text/javascript">
+$(function(){
+        $('.sub_menu').hide();
+        $('.main_menu1').click(function(){
+                if($('+ul.sub_menu',this).css('display') == 'none'){
+                        $('+ul.sub_menu',this).slideDown();
+                }else {
+                $('+ul.sub_menu',this).slideUp();
+                }
+        });        
+});
+$(function(){
+        $('.sub_menu').hide();
+        $('.main_menu2').click(function(){
+                if($('+ul.sub_menu',this).css('display') == 'none'){
+                        $('+ul.sub_menu',this).slideDown();
+                }else {
+                $('+ul.sub_menu',this).slideUp();
+                }
+        });        
+});
+$(function(){
+        $('.sub_menu').hide();
+        $('.main_menu3').click(function(){
+                if($('+ul.sub_menu',this).css('display') == 'none'){
+                        $('+ul.sub_menu',this).slideDown();
+                }else {
+                $('+ul.sub_menu',this).slideUp();
+                }
+        });        
+});
+
+
+
+
+$(function () {
+  $('div.imageon').hover(
+    function () {
+      // 表示
+      $(this).css('width', $(this).children('img').width()).children('span').fadeIn('fast');
+    },
+    function () {
+      // 非表示
+      $(this).children('span').fadeOut('slow');
+    }
+  );
+});
+
+
+
+
+$(function() {
+     $('#container').masonry({
+         itemSelector : '.item',
+         columnWidth : 270,
+         isAnimated : true,
+         animationOptions: {
+             duration: 600
+         } 
+     });
+ }); 
+
+
+
+
+jQuery(function($) {
+  
+var nav    = $('#fixedBox'),
+    offset = nav.offset();
+  
+$(window).scroll(function () {
+  if($(window).scrollTop() > offset.top) {
+    nav.addClass('fixed');
+  } else {
+    nav.removeClass('fixed');
+  }
+});
+  
+});
+
+
+
+</script>
+
+<link media="screen" rel="stylesheet" href="css/colorbox.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+<script type="text/javascript">
+ jQuery(document).ready(function($){
+  $(".ajax").colorbox();
+  $(".youtube").colorbox({iframe:true, innerWidth:853, innerHeight:480, open:false});
+  $(".iframe").colorbox({iframe:true, width:"840px", height:"492px", open:true});
+  $(".inline").colorbox({inline:true, width:"50%"});
+  $(".callbacks").colorbox({
+   onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+   onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+   onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+   onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+   onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+  });
+    
+ 
+  $("#click").click(function(){ 
+   $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+   return false;
+ /*   return false;　でクリック後ジャンプを阻止*/
+  });
+ });
+</script>
+
+
+
+<style type="text/css">
+
+html {overflow-y:scroll;
+
+	scrollbar-3dlight-color: #CAE7FF;
+	scrollbar-arrow-color: #FFFFFF;
+	scrollbar-darkshadow-color: #8FBDE2;
+	scrollbar-face-color: #CAE7FF;
+	scrollbar-highlight-color: #CAE7FF;
+	scrollbar-shadow-color: #8FBDE2;
+	scrollbar-track-color: #FFFFFF;
+	height: 100%;
+
+	 }
+
+
+body{
+	font-family: Helvetica;
+	background-color: #fffffff;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	scrollbar-3dlight-color: #CAE7FF;
+	scrollbar-arrow-color: #FFFFFF;
+	scrollbar-darkshadow-color: #8FBDE2;
+	scrollbar-face-color: #CAE7FF;
+	scrollbar-highlight-color: #CAE7FF;
+	scrollbar-shadow-color: #8FBDE2;
+	scrollbar-track-color: #FFFFFF;
+	height: 100%;
+	
+	background: url(rotate/rotate.php) no-repeat center center fixed;
+	min-height: 100%;
+	background-size: cover; 
+	}
+
+
+
+
+
+
+
+
+.cap1 {  font-size: 10px; line-height: 13px}
+a:link {  color: #4DA2E8; text-decoration: none}
+a:visited {  color: #2780C9; text-decoration: none}
+a:active {  color: #4DA2E8; text-decoration: underline}
+a:hover {  color: #3E88FF; text-decoration: underline}
+.lead { font-size: 12px; line-height: 18px }
+.cont {  font-size: 12px; line-height: 20px}
+.cont11 {  font-size: 11px; line-height: 15px}
+.cont13 {  font-size: 13px; line-height: 21px}
+.conts {  font-size: 9px; line-height: 11px}
+.contss {  font-size: 8px; line-height: 10px}
+.title {  font-size: 18px; line-height: 18px}
+.cap1-E { font-size: 10px; line-height: 13px ; font-family: "Arial", "Helvetica", "sans-serif"}
+.cont02 {
+	font-size: 10px;
+	line-height: normal;
+	font-weight: normal;
+	color: #333333;
+	}
+.title02 {
+	font-size: 12px;
+	line-height: normal;
+	font-weight: normal;
+	color: #FF66AA;
+	}
+.title03 {
+	font-size: 17px;
+	line-height:27px;
+	font-weight: normal;
+		}
+.title04 {
+	font-size: 17px;
+	line-height:27px;
+	font-weight: bold;
+		}
+.date {
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #2885a8
+	}
+
+
+
+
+
+.iframe.twitter-share-button {
+    width: 72px!important;
+	}
+.iframe.twitter-follow-button {
+    width: 372px!important;
+	}
+
+
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+
+
+
+a {
+        text-decoration:none;
+}
+ul#menu, ul.sub_menu{
+        list-style:none;
+        margin:0;
+        padding:0;
+}
+#menu{
+        width:410px;
+        margin:10px;
+        border:1px solid #e5e4e6;
+        border-bottom:none;
+}
+.main_menu1{
+        background-image:url("imgs/400x20_1.jpg");
+        color:#ffffff;
+        font-size:9pt;
+        font-weight:bold;
+        padding:5px 5px;
+        margin:-1px 0 0 -1px;
+        cursor:pointer;
+        width:400px;
+        height:20px;
+        border:1px solid #e5e4e6;
+        filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	opacity: 0.75;
+}
+.main_menu2{
+        background-image:url("imgs/400x20_2rtv.jpg");
+        color:#ffffff;
+        font-size:9pt;
+        font-weight:bold;
+        padding:5px 5px;
+        margin:-1px 0 0 -1px;
+        cursor:pointer;
+        width:400px;
+        height:20px;
+        border:1px solid #e5e4e6;
+        filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	opacity: 0.75;
+}
+.main_menu3{
+        background-image:url("imgs/400x20_3btybh.jpg");
+        color:#ffffff;
+        font-size:9pt;
+        font-weight:bold;
+        padding:5px 5px;
+        margin:-1px 0 0 -1px;
+        cursor:pointer;
+        width:400px;
+        height:20px;
+        border:1px solid #e5e4e6;
+        filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	opacity: 0.75;
+}
+.sub_menu li{
+        background:#E2DED3;
+        font-size:9pt;
+        padding:5px 5px;
+        width:400px;
+        border:1px solid #e5e4e6;
+        margin:-1px 0 0 -1px;
+        filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+}
+
+
+
+ 
+ 
+a.hover_img{
+    background-color:#7dfff1;/*マウスオーバー色を設定*/
+    display:block;
+}
+a.hover_img img{
+    transition:all 0.5s ease;/*マウスオーバーが完了する時間や動きを設定*/
+}
+a:hover.hover_img img{
+    opacity: 0.52;/*マウスオーバー時の透明度を設定（各ブラウザ用）*/
+    filter: alpha(opacity=52);/*マウスオーバー時の透明度を設定（各ブラウザ用）*/
+}
+
+
+a.hover_img_y{
+    background-color:#FFF682;/*マウスオーバー色を設定*/
+    display:block;
+}
+a.hover_img_y img{
+    transition:all 0.5s ease;/*マウスオーバーが完了する時間や動きを設定*/
+}
+a:hover.hover_img_y img{
+    opacity: 0.52;/*マウスオーバー時の透明度を設定（各ブラウザ用）*/
+    filter: alpha(opacity=52);/*マウスオーバー時の透明度を設定（各ブラウザ用）*/
+}
+
+
+a.hover_img_w{
+    background-color:#FFFFFF;/*マウスオーバー色を設定*/
+    display:block;
+}
+a.hover_img_w img{
+    transition:all 0.5s ease;/*マウスオーバーが完了する時間や動きを設定*/
+}
+a:hover.hover_img_w img{
+    opacity: 0.52;/*マウスオーバー時の透明度を設定（各ブラウザ用）*/
+    filter: alpha(opacity=52);/*マウスオーバー時の透明度を設定（各ブラウザ用）*/
+}
+
+
+
+.inlineframe    {
+    background-color:#eeebe2;
+    height:450px;
+    overflow:auto;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+
+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 7px;}
+ }
+
+li {
+margin-left:0px;
+list-style:outside none; 
+margin:12px, 0; 
+}
+
+
+
+.item{
+ margin:10px;
+ float:left;
+ background-color:#ffffff;
+ color:#333333;
+ }
+
+.small{
+ width:250px;
+ }
+ 
+.small250{
+ width:250px;
+ height:250px;
+ }
+
+.medium{
+ width:520px;
+ }
+
+.medium250{
+ width:250px;
+ height:520px;
+ }
+ 
+.large{
+ width:790px;
+ } 
+
+
+
+</style>
+
+
+
+<script src="js/audiojs/audiojs/audio.min.js"></script>
+<script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
+</script>
+
+
+
+
+</head>
+ 
+<body leftmargin="0" topmargin="0">
+<!-- 天安門事件 天安? 西蔵 おまじない-->
+
+<!-- topだよ！ -->
+<!-- 
+	<table width="920" height="50" border="0" margin="0">
+		<tr>
+			<td height="40" align="center" valign="top" colspan="5">
+			<span class="contss">
+				<br>
+-->
+
+<!-- 音声再生ここから -->
+<!-- 
+				<audio src="imgs/_tsuminohivoice_gotostore__.mp3" preload="auto" />
+-->
+<!-- 音声再生ここまで -->
+<!-- 
+			</span>
+			</td>
+		</tr>
+	</table>
+-->
+<!-- topおわり -->
+
+<!-- 本体はじまり -->
+	<div id="container">
+<!-- 1 -->
+	<div class="item large">
+	<a class="hover_img_w" href="" target="_blank"><img src="imgs/790x580_.jpg" width="790" height="580"  border="0"></a>
+	</a>
+	</div>
+
+<!-- mailorder2015summer -->
+<!-- 
+	<div class="item medium">
+	<a href="https://shop.minori.ph/minori/" class="hover_img_w" target="_blank"><img src="imgs/520x250mailorder2015summers.jpg" width="520" height="250"  border="0"></a>
+	</div>
+ -->
+
+<!-- campaign201601 -->
+<!-- 
+	<div class="item medium">
+	<a class="hover_img_w" href="http://www.minori.ph/lineup/_tsuminohi/imgs/minori_tsuminohi_canpaign201601.jpg" target="_blank"><img src="imgs/520x250canpaign201601.jpg" width="520" height="250"  border="0"></a>
+	</div>
+ -->
+
+<!-- 3 -->
+	<div class="item medium250">
+	<a class="twitter-timeline" href="https://twitter.com/trinoline" data-widget-id="727073149322317824" height="520">@trinoline</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!--	
+	<a class="twitter-timeline" href="https://twitter.com/trinoline" data-widget-id="619120244087336960" height="520">@trinoline</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+-->
+	</div>
+	
+
+<!-- webradio -->
+<!--
+	<div class="item small">
+	<a href="_webradio.php" class="hover_img">
+		<img src="imgs/250x250webradio.jpg" width="250" height="250" border="0">
+	</a>
+	</div>
+-->
+
+<!-- お知らせココより -->
+	<div class="item small">
+	<table width="250"  height="520" border="0" margin="0" cellspacing="4" cellpadding="5">
+		<tr>
+			<td width="230" align="left" valign="top" cellspacing="0" cellpadding="0">
+				<span class="title04"><font color="#947f6c">[</font> <font color="#625338"><a href="_topic_.html">おしらせ</a></font> <font color="#947f6c">]</font></span>
+					<img src="imgs/space1x1.png" width="100" height="1" border="0">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.minori.ph/lineup/trinoline/" data-text="[ トリノライン ] 特設ページ閲覧中  -  それでも、わたしは。｜ " data-via="trinoline" data-count="none" data-lang="en">ツイートする</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					<img src="imgs/space1x1.png" width="5" height="1" border="0">
+					<a href="https://twitter.com/trinoline" class="twitter-follow-button" data-show-count="false" data-lang="en">@trinolineをフォロー</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</span>
+				<div class="inlineframe"  width="230"  height="450" border="0" cellspacing="5" cellpadding="5">
+					<ul>
+		<!-- お知らせココヨリ -->
+<!-- voiceplayここから -->
+<!-- 
+						<li>
+							<audio id="audiotag">
+ 							<source src="imgs/_tsuminohivoice_gotostore__.mp3" type="audio/mp3">
+							</audio>
+							<bgsound src="imgs/_tsuminohivoice_gotostore__.mp3" loop="1" volume="0">
+
+							<script type="text/javascript">
+								var userAgent = window.navigator.userAgent.toLowerCase();
+								if( userAgent.indexOf( 'msie' ) == -1 )
+								{ // not IE
+									 audiotag.play();
+								}
+							</script>
+					<br>
+						</li>
+ -->
+<!--  voiceplayここまで -->
+					<!-- お知らせひとつココカラ -->
+						<li>
+							<div class="date">[&ensp;<strong>2016.07.20</strong>&ensp;]&ensp;---------------------</div>
+							<div class="cont13">minori最新作<br>
+							<strong><a href="_topic_.html" target="_parent">『トリノライン（TRIノLINE）』</a><br>
+							</strong>を発表いたします。<br>
+							<br>
+							<a href="_topic_.html" target="_parent"><img src="imgs/trinoline_ad210.jpg" border="0"></a><br>
+							<br></div>
+							<div class="contss"><font color="#FFF069">―</font></div>
+						</li>
+					<!-- ココマデ -->
+		<!-- お知らせココマデ -->
+					</ul>
+				</div>
+
+			</td>
+		</tr>
+	</table>
+	</div>
+<!-- お知らせココまで -->
+
+<!-- campeign20141030 -->
+<!-- 
+	<div class="item medium">
+	<a href="http://www.minori.ph/lineup/_yorino/_narino.html" class="hover_img_y" target="_blank"><img src="http://www.minori.ph/lineup/_yorino/imgs/narino20141121_520x250.jpg" width="520" height="250"  border="0"></a>
+	</div>
+-->
+<!-- ココまで -->
+
+<!-- prologue -->
+	<div class="item small">
+	<a href="_prologue_.html" class="hover_img_w">
+		<img src="imgs/250x280_prologue_.jpg" width="250" height="280" border="0">
+		</a>
+	</div>
+
+<!-- about -->
+	<div class="item small">
+	<a href="_about_.html" class="hover_img_w">
+		<img src="imgs/250x280_about_.jpg" width="250" height="280" border="0">
+		</a>
+	</div>
+
+<!-- character -->
+	<div class="item small">
+	<a href="_chara_.html" class="hover_img_w">
+		<img src="imgs/250x280_chara_.jpg" width="250" height="280" border="0">
+		</a>
+	</div>
+
+<!-- goods201608 -->
+	<div class="item medium250">
+	<a class="hover_img_w" href="http://www.denkigai.net/dg/" target="_blank"><img src="imgs/250x520_2016summer_.jpg" width="250" height="520"  border="0"></a>
+	</div>
+
+<!-- product -->
+	<div class="item small">
+	<a href="_product_.html" class="hover_img_w">
+		<img src="imgs/250x280_product_.jpg" width="250" height="280" border="0">
+		</a>
+	</div>
+
+<!-- teaserMOVIE -->
+	<div class="item small">
+	<a class="hover_img_w youtube" href="https://www.youtube-nocookie.com/embed/saMxdszP1tQ?autoplay=1&rel=0&amp;showinfo=0" autoplay><img src="imgs/250x520_movie.jpg" width="250" height="520"  border="0"></a>
+	</div>
+<!-- ココまで -->
+
+<!-- special -->
+	<div class="item small">
+	<a href="_special_.html" class="hover_img_w">
+		<img src="imgs/250x280_special_.jpg" width="250" height="280" border="0">
+		</a>
+	</div>
+
+<!-- support -->
+	<div class="item small">
+	<a href="_support_.html" class="hover_img_w">
+		<img src="imgs/250x280_support_.jpg" width="250" height="280" border="0">
+		</a>
+	</div>
+
+<!-- topic -->
+	<div class="item small">
+	<a href="_topic_.html" class="hover_img_w">
+		<img src="imgs/250x280_topics_.jpg" width="250" height="280" border="0">
+		</a>
+	</div>
+	
+
+</div>
+
+
+
+
+<!-- ページ最下部ここから -->
+
+<table width="100%" align="center" height="30" border="0" margin="0" cellspacing="0" cellpadding="0"> 
+<tr>
+
+<td width="810" height="30" align="center">
+
+	<table width="810" height="100%"  border="0" margin="0">
+		<tr>
+			<td >
+				
+			</td>
+		</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+<table width="100%" bgcolor="#FFF069" align="center" height="25" border="0" margin="0" cellspacing="0" cellpadding="0"> 
+<tr>
+
+<td bgcolor="#ffffff" width="810" height="25" align="center">
+
+	<table width="810" height="100%"  border="0" margin="0">
+		<tr>
+			<td bgcolor="#ffffff">
+				
+			</td>
+		</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+
+
+<table width="100%" bgcolor="#b8edf9" align="center" height="" border="0" margin="0" cellspacing="0" cellpadding="0"> 
+<tr>
+<td width="810" height="" align="center">
+
+	<table width="810" height="100%"  border="0" margin="0">
+		
+		<tr>
+			<td height="40" align="center" valign="top" colspan="">
+			<span class="cap1-E">
+				<br>
+				当サイトは「１８才未満の方は閲覧出来ないページ」を含んでいる可能性がある為、１８歳未満の方のアクセスを固くお断りします。<br>
+				<br>
+				
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.minori.ph/lineup/trinoline/" data-text="[ トリノライン ] 特設ページ閲覧中  -  それでも、わたしは。｜ " data-via="trinoline" data-count="none" data-lang="en">ツイートする</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				
+				&ensp;
+				
+				<a href="https://twitter.com/trinoline" class="twitter-follow-button" data-show-count="false" data-lang="en">@trinolineをフォロー</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				
+				&ensp;&ensp;<font color="#504445">&copy;&ensp;minori&ensp;All&ensp;Rights&ensp;Reserved.</font>&ensp;<a href="http://www.minori.ph/" target="_blank"><img src="imgs/logo_minorisss.png" border="0" valign="middle"></a>
+				<br>
+				<br>
+				</span>
+			</td>
+		</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+</div>
+<!-- 本体おわり -->
+
+<!-- 
+<div style="visibility:hidden;">
+ <audio src="imgs/special/voice/tohkatop01.mp3" preload="true" autoplay></audio>
+</div>
+ -->
+</body>
+</html>
