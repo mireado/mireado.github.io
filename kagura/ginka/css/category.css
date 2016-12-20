@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/* CSS Document */
+
+section {
+	padding: 120px 0 50px 0;
+}
+/* =====================
+  STORY
+===================== */
+#story section {
+	padding-bottom: 120px;
+}
+#story .storyText p {
+	line-height: 2.5;
+	margin-bottom: 30px;
+	font-weight: bold;
+	text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+}
+#story .storyText.container {
+	text-align: center;
+}
+#story .photoAmemadoi {
+	position: relative;
+	margin-bottom: 50px;
+}
+#story .story01 {
+	position: absolute;
+	z-index: 5;
+	top: 30px;
+	left: -25px;
+}
+#story .story02 {
+	position: absolute;
+	z-index: 5;
+	bottom: 30px;
+	right: -25px;
+}
+#story .story2column {
+	display: flex;
+	display: -webkit-flex;
+}
+#story .story2column ul {
+	width: 400px;
+	margin-bottom: 30px;
+}
+#story .story2column ul li {
+	margin-bottom: 20px;
+}
+#story .story03 {
+	text-align: left;
+	flex: auto;
+	-webkit-flex: auto;
+	padding-left: 60px;
+}
+#story .photoAmemadoi02 {
+	display: flex;
+	display: -webkit-flex;
+	margin-bottom: 30px;
+}
+#story .photoAmemadoi02 div {
+	flex: 50%;
+	-webkit-flex: 50%;
+	padding: 8px;
+}
+/* =====================
+  CONCEPT
+===================== */
+#concept .concept {
+	margin-bottom: 60px;
+}
+#concept main .container {
+	max-width: 1140px;
+}
+.cardList {
+	text-align: center;
+}
+.cardList > div {
+	display: inline-block;
+}
+.cardList .wrapper {
+	width: 330px;
+	height: 520px;
+	margin: 0 10px;
+	-webkit-perspective: 1000;
+	perspective: 1000;
+}
+.cardList .inner {
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: 1.0s;
+	transition: 1.0s;
+}
+.cardList .front, .cardList .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 330px;
+	height: 520px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.cardList .front {
+}
+.cardList .back {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+/* =====================
+  CHARACTER
+===================== */
+#character .charaBtnArea {
+	margin-bottom: 50px;
+}
+#character .charaBtnArea ul {
+	display: flex;
+	display: -webkit-flex;
+}
+#character .charaBtnArea ul li {
+	flex: auto;
+	-webkit-flex: auto;
+	text-align: center;
+	position: relative;
+	top: 0px;
+	transition: top 0.4s;
+}
+#character .charaBtnArea ul li:hover {
+	top: -15px;
+}
+#character .charaBtnArea ul li img {
+	border: solid 1px #eee;
+	border-radius: 6px;
+}
+#character .charaArea {
+	width: 980px;
+	margin: auto;
+	position: relative;
+	height: 1400px;
+}
+#character .textArea {
+	float: left;
+	width: 500px;
+	position: relative;
+	z-index: 10;
+}
+#character .tachieArea {
+	position: absolute;
+	top: -10px;
+	right: 60px;
+}
+.prof p {
+	line-height: 2;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+}
+#character .name {
+	margin-top: 20px;
+}
+#character .cv {
+	margin-bottom: 20px;
+}
+#slide {
+	width: 640px;
+	height: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+#slide img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#character.charaMasashi .tachieArea {
+	top: -20px;
+}
+#character .credit {
+	position: absolute;
+	left: 800px;
+	top: 0;
+}
+/* =====================
+  SPECIAL
+===================== */
+
+/* =====================
+  BONUS
+===================== */
+#bonus h3.line{
+	font-weight:bold;
+	margin-bottom:20px;}
+	
+.specialShop{
+	overflow:hidden;
+	}
+
+.shopPanel > img {
+	border: solid 1px #eee;
+	border-radius: 6px;
+}
+.shopPanel{
+	position:relative;}
+.specialShop .shopBtn {
+	position: absolute;
+	bottom: 8px;
+	left: 50%;
+	margin-left:-103px;
+}
+.shopArea{
+float:left;
+margin:0px 7px 25px 7px;}
+
+
+.cardImg{	border: solid 1px #eee;
+	border-radius: 6px;}
+	
+.yoyakuImg{
+	text-align:center;
+	margin-bottom:50px;}
+/* =====================
+  SPEC
+===================== */
+.spec {
+	text-align: center;
+}
+#spec section {
+	margin-bottom: 50px;
+}

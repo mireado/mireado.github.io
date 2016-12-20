@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url('https://fonts.googleapis.com/css?family=Brawler');
+/* =====================
+  all
+===================== */
+body {
+	font-family:"游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+	line-height: 1.5;
+	font-size: 15px;
+	color: #8d8d8d;
+	min-width:1140px;
+	background: url(../images/bg.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+a {
+	transition: 0.3s;
+}
+a:link {
+	color: #083072;
+}
+a:visited {
+	color: #c61722;
+}
+a:hover {
+	color: #444444;
+}
+a:active {
+	color: #262626;
+}
+.container {
+	margin: 0 auto;
+	max-width:1040px;
+}
+.forefront{position:relative;
+z-index:10;}
+
+.innerShadow {
+	position:relative;
+	}
+.innerShadow:after {
+  position: absolute;
+  z-index: 2;
+  content: "";
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border: 10px solid rgba(255,255,255,.3);
+  box-sizing: border-box;
+}
+.shadow {
+box-shadow: 0 10px 8px -6px #d9e9f3;
+}
+img{
+     vertical-align: bottom;
+}
+
+/* =====================
+  header
+===================== */
+header {
+	background:url(../images/nav_bg.png) repeat-x center bottom;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	width: 100%;
+}
+header .container {
+	max-width: 1120px;
+	display: flex;
+	display: -webkit-flex;
+	align-items:flex-start;
+	justify-content: space-between;
+}
+
+header h1 {
+	padding: 0 20px 0 0;
+}
+header h1 a:hover {
+	opacity: 0.6;
+}
+#globalNav {
+	display: block;
+}
+#globalNav ul {
+	display: flex;
+	display: -webkit-flex;
+	padding-top:20px;
+}
+#globalNav li {
+	text-align: center;
+	display: inline-block;
+	padding: 0 5px;
+	background:url(../images/nav_li.png) no-repeat right center;
+	position: relative;
+}
+#globalNav li a {
+	font-size: 14px;
+	line-height: 1.0;
+	font-family: 'Brawler', sans-serif;
+	display: block;
+	padding: 5px 15px;
+	text-decoration: none;
+	color: #083072;
+	text-align: center;
+}
+
+#globalNav li span {
+	font-size: 10px;
+	font-weight: nomal;
+	display: block;
+	margin-top: 3px;
+}
+#globalNav li:last-child {
+	border-right: none;
+}
+
+#globalNav li a:visited {
+	color: #083072;
+}
+#globalNav li a:hover {
+	color: #b5b5b5;
+}
+#globalNav li a:active {
+	color: #262626;
+}
+#globalNav li.coming a:link{
+	color: #b5b5b5;}
+#globalNav li.coming a:visited{
+	color: #b5b5b5;}
+#globalNav li:before {
+	position: absolute;
+	left: 12px;
+	top: 40px;
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 2px;
+	background: #083072;
+	transition: 0.5s;
+}
+#globalNav li:hover:before {
+	width: 80%;
+}
+
+/* =====================
+  contents
+===================== */
+/*見出しh2*/
+h2 {
+	font-size: 2.5rem;
+	line-height: 1.0;
+	font-family: 'Brawler', sans-serif;
+	font-weight:400;
+	margin: 0px auto 40px auto;
+	text-align: center;
+	position: relative;
+	width: 300px;
+	color:#083072;
+	
+}
+h2:after {
+	content: '';
+	position: absolute;
+	top: 60px;
+	left: 125px;
+	width: 50px;
+	height: 4px;
+	background: #083072;
+}
+.pageTitle span {
+	font-size: 0.7rem;
+	font-weight:bold;
+	display: block;
+	margin-top: 3px;
+}
+/*見出しh3*/
+h3.line {
+	font-family: 'Brawler', sans-serif;
+	font-weight:400;
+	position: relative;
+	padding: 0.1em 0;
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+	text-align:center;
+	color:#083072;
+	letter-spacing:2px;
+}
+h3.line::before, h3::after {
+	position: absolute;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 5px;
+	box-sizing: border-box;
+}
+h3.line::before {
+	top: 0;
+	border-top: 2px solid #083072;
+	border-bottom: 1px solid #083072;
+}
+h3.line::after {
+	bottom: 0;
+	border-top: 1px solid #083072;
+	border-bottom: 2px solid #083072;
+}
+/* =====================
+  footer
+===================== */
+footer {
+	width:100%;
+	position:relative;
+	
+	text-align: center;
+	font-family: 'Brawler', serif;
+	padding: 10px 0;
+	border-top: solid 1px #EAEAEA;
+	background-color: rgba(255,255,255,0.8);
+	z-index:100;
+	
+}
+footer small {
+	font-size: 10px;
+	letter-spacing: 1.5px;
+}
+
+/* =====================
+  wave
+===================== */
+#wave{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	height:120px;
+	background:url(../images/wave.png);
+	animation: wavemove 20s linear infinite;
+	-webkit-animation: wavemove 20s linear infinite;
+	-moz-animation: wavemove 20s linear infinite;
+}
+#bgCard01{
+	position:absolute;
+	top:0px;
+	right:0px;
+	height:500px;
+	width:500px;
+	background:url(../images/bg_card01.png);
+	background-position:top right;
+	background-repeat:no-repeat;
+	}
+#bgCard02{
+position:fixed;
+	bottom:0px;
+	left:0px;
+	height:500px;
+	width:500px;
+	background:url(../images/bg_card02.png);
+	background-position:bottom left;
+	background-repeat:no-repeat;
+	}
+#heroImg #wave02{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:100px;
+	background:url(../images/wave02.png);
+	animation: wavemove 20s linear infinite;
+	-webkit-animation: wavemove 20s linear infinite;
+	-moz-animation: wavemove 20s linear infinite;
+}
+@keyframes wavemove {
+	0% {background-position: 0 0;}
+	25% {background-position: 200px 0;}
+	50% {background-position: 400px 0;}
+	75% {background-position: 600px 0;}
+	100% {background-position: 800px 0;}
+}
+@-webkit-keyframes wavemove {
+	0% {background-position: 0 0;}
+	25% {background-position: 200px 0;}
+	50% {background-position: 400px 0;}
+	75% {background-position: 600px 0;}
+	100% {background-position: 800px 0;}
+}
+@-moz-keyframes wavemove {
+	0% {background-position: 0 0;}
+	25% {background-position: 200px 0;}
+	50% {background-position: 400px 0;}
+	75% {background-position: 600px 0;}
+	100% {background-position: 800px 0;}
+}

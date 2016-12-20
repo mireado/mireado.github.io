@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+.container {
+	max-width: 1200px;
+	text-align: center;
+}
+h2 {
+	margin-top: 50px;
+}
+/* =====================
+  hero Img
+===================== */
+#heroImg {
+	text-align: center;
+	width: 100%;
+	height: 0;
+ padding-top: calc(1160 / 1920 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
+	background: url(../images/mv_bg.jpg) top center / cover no-repeat;
+	position: relative;
+	z-index: 10;
+	overflow:hidden;
+}
+.mvChara {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background: url(../images/mv_chara.png) top center / cover no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mvText {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background: url(../images/mv_text.png) top center / cover no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mvRelease {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background: url(../images/mv_release.png) top center / cover no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+article{margin-bottom:10px;}
+/* =====================
+  contents
+===================== */
+#topContents {
+	margin-top: 70px;
+}
+.mainContents {
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	align-items: stretch;
+	-webkit-align-items: stretch;
+}
+.mainContents div {
+	flex: 1 1 360px;
+	-webkit-flex: 1 1 360px;
+	padding: 0 10px;
+	position: relative;
+
+}
+.movie {
+	width: 360px;
+	
+}
+.movie img{
+	border-radius:6px;
+	
+}
+.news {
+	text-align: left;
+	font-size: 12px;
+	width: 360px;
+}
+.news dt {
+	color: #1557c3;
+	font-weight: bold;
+}
+.twitter {
+	width: 360px;
+}
+.mainContents .lineBottom {
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+	width: 380px;
+	height: 2px;
+	background: #083072;
+}
+/* =====================
+  topics
+===================== */
+
+.topics ul {
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	margin-bottom:90px;
+}
+.topics ul li {
+	flex: 370px;
+	-webkit-flex: 370px;
+	padding: 0 10px;
+	margin-bottom: 25px;
+}
+.topics ul li img {
+	border-radius: 5px;
+	vertical-align: bottom;
+	
+	border: solid 1px #eee;
+
+}
